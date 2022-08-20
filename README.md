@@ -1,7 +1,7 @@
 # Sabka Bazaar
 # Project on E-commerce site.
 
-### Note: This fork contains only the fial commit. To see all the comits visit https://github.com/ananditawairya/ecommerce-app-assignment
+### Note: This fork contains only the final commit. To see all the comits visit https://github.com/ananditawairya/ecommerce-app-assignment
 
 ## Getting Started
 
@@ -23,4 +23,4 @@ npm start
 
 json-server --watch db.json --port 3010
 
-## The application can be accessed on http://localhost:3001
+# The application can be accessed on http://localhost:3001
