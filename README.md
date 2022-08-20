@@ -6,8 +6,10 @@
 ## Getting Started
 
 ## Clone the repository and install the dependencies:
-Cloning : https://github.com/ananditawairya/shopping-cart-assignment.git
-Installing Node Modules : npm i
+
+### Cloning : https://github.com/ananditawairya/shopping-cart-assignment.git
+
+### Installing Node Modules : npm i
 
 ## Starting the application 
 
