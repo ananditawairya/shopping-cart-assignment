@@ -1,0 +1,26 @@
+$mobile-size:540px;
+.login_container{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: calc(100vh * 40 /100);
+    align-items: center;
+    padding: 1.5em 0 ;
+
+    @media only screen and (max-width:$mobile-size) {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+}
+.login_form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 25%;
+
+    @media only screen and (max-width:$mobile-size) {
+        width: 95%;
+    }
+}
+.login_heading{
+    margin-bottom: 30px;
+}

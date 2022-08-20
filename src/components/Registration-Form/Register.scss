@@ -1,0 +1,30 @@
+$mobile-size:540px;
+.registration_container{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: calc(100vh * 60 /100);
+    align-items: center;
+    padding: 1.5em 0;
+    gap: 1.5em;
+    @media only screen and (max-width:$mobile-size) {
+        flex-direction: column;
+    }
+}
+.registration_form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 25%;
+    @media only screen and (max-width:$mobile-size) {
+        width: 95%;
+    }
+}
+.registration_heading{
+    margin-bottom: 30px;
+}
+
+.error_message{
+    color: red;
+    font-weight: 600;
+    font-size: 1em;
+}

@@ -1,0 +1,112 @@
+$tablet-size:908px;
+$mobile-size:540px;
+
+.products_card_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    column-gap: 10px;
+}
+
+.item_purchase_section{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+ @media only screen and (max-width:$tablet-size) {
+    display: none;
+ } 
+}
+
+.item_details{
+    width: 100%;
+    @media only screen and (max-width:$tablet-size) {
+        display: flex;
+    }
+}
+
+
+.product_card > *:not(:last-child) {
+    display: block;
+    margin-bottom: 30px; 
+    @media only screen and (max-width:$tablet-size) {
+         display: flex;
+         gap:5px
+    }
+}
+
+
+
+.item_details > *:not(:last-child) {
+    display: block;
+    margin-bottom: 30px; 
+    @media only screen and (max-width:$tablet-size) {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.item_image{
+    margin: auto;
+    height: 200px;
+    @media only screen and (max-width:$tablet-size) {
+        margin:0;
+        width: 50%;
+    }
+}
+
+.product_card{
+    padding: 10px 10px 0px;
+}
+
+.image_description{
+    // background-color: #c5c5c5;
+    // height: 165px;
+    // overflow: hidden;
+    // text-overflow: ellipsis; 
+    background-color: #eaeaea;
+    height: 130px;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: small;
+    @media only screen and (max-width:$tablet-size) {
+        height: 200px;
+    }
+}
+
+.buy{
+    padding: 10px 20px;
+}
+
+.products_section{
+    // width: 60%;
+    @media only screen and (max-width:$mobile-size) {
+        margin-top: 50px;
+      }
+}
+
+.item_name{
+    width: 100%;
+    height: 50px;
+}
+
+// .item_heading{
+//     @media only screen and (max-width:$mobile-size) {
+//       font-size: 14px;
+//     }
+// }
+
+.purchase_button{
+ display: none;
+ @media only screen and (max-width:$tablet-size) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+ }  
+
+ & .buy{
+    width: 100%;
+ }
+}

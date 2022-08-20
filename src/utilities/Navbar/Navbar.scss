@@ -1,0 +1,97 @@
+$tablet-size:908px;
+$mobile-size:540px;
+.navbar{
+    display: flex;
+  //  height: calc(100vh * 12/100);
+    justify-content: space-around;
+    @media only screen and (max-width:$tablet-size){
+        justify-content: space-between;
+    }
+}
+
+.add_to_cart{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  border: none;
+  padding: 15px;
+  font-size: 1rem;
+  @media only screen and (max-width:$mobile-size){
+    padding: 10px;
+  }
+}
+
+.navbar_end{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 100%;
+    @media only screen and (max-width:$mobile-size){
+        width: 80%;
+        padding: 5px;
+      }
+}
+
+.cart_image{
+    width: 30px;
+    margin-right: 10px
+}
+
+.authentication_links{
+
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-end;
+    @media only screen and (max-width:$mobile-size){
+        font-size: 11px;
+        display: none;
+      }
+}
+
+.sign_in{
+    margin-right: 10%;
+}
+
+.navigation_links{
+    margin-left: 100px;
+    @media only screen and (max-width:$mobile-size){
+        // margin-left: 15px;
+        // margin-right: 25px;
+        // font-size: 14px;
+        display: none;
+      }
+}
+
+.home{
+    margin-right: 20%;
+}
+
+.navbar-start{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    @media only screen and (max-width:$mobile-size){
+        grid-template-columns: 45% 55%;
+      }
+}
+
+.links{
+    color: #555151;
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+
+.auth_links{
+    color: #18191d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register{
+    margin-right: 5px;
+}
